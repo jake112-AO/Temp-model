@@ -46,3 +46,5 @@ class PropertyVectorStore:
         return results
     def as_retriever(self):
         return self.vector_store.as_retriever()
+    def get_vector_store(self):
+        return self.vector_store
